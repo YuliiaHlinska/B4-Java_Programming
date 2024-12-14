@@ -104,4 +104,39 @@ public class ArrayUtil {
         }
         return total;
     }
+
+    /***
+     * This method returns int array with the given int element at the end of the given int array
+     * @param arr given int array
+     * @param num giben number
+     * @return new int array with new int number at the end
+     */
+    public static int [] addElement (int [] arr, int num){
+
+        int [] addedArr = Arrays.copyOf(arr, arr.length+1);
+        addedArr[addedArr.length-1] = num;
+
+
+
+        return addedArr;
+    }
+
+    /**
+     * This method returns int array with given int var args elements added at the end of the given int array
+     * @param arr given int array
+     * @param arr2 given int var args elements
+     * @returns int array
+     */
+    public static int [] addElementArray (int [] arr, int ... arr2){
+        int [] addedAr = Arrays.copyOf(arr,arr.length+arr2.length);
+
+        for (int i = arr.length, j=0; i < addedAr.length; i++, j++) {
+            addedAr[i] = arr2[j];
+        }
+
+        return addedAr;
+    }
+    /**
+     * TODO: add the version of (method overloaded) the above two method fro String
+     */
 }
