@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class UsingCollectionsClass {
+public class  UsingCollectionsClass {
     public static void main(String[] args) {
         // Collections ---- > 's' at the end
 
