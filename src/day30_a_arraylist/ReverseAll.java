@@ -15,6 +15,8 @@ import java.util.Arrays;
         Ex:
             Input: {"ted", "talk", "learn"}
             Output: {"det", "klat", "nrael"}
+
+
  */
 
 public class ReverseAll {
